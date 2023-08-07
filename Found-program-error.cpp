@@ -11,66 +11,66 @@ void sleep (int x = 100) {
 	return;
 }
 void user (int x) {
-	cout << "请确保 g++.exe 已添加到环境变量\n";
-	cout << "请确保已将标程写入 std.cpp 中\n";
-	cout << "请确保已将标程写入 UnAC.cpp 中\n";
-	cout << "请确保已将数据生成器写入 gen.cpp 中\n";
+	cout << "Make sure that g++.exe has been added to the environment variable\n";
+	cout << "Please make sure that the standard procedure has been written to the std.cpp\n";
+	cout << "Please make sure that the standard procedure has been written to the UnAC.cpp\n";
+	cout << "Make sure that the data generator is written to the gen.cpp\n";
 	system ("pause");
 	system ("cls");
 	/*-----------------------------------*/
-	cout << "正在删除文件";
+	cout << "Deleting files";
 	sleep (x);
 	system ("del std.exe & del gen.exe & del UnAc.exe");
 	system ("cls");
 	/*-----------------------------------*/
-	cout << "正在编译标程代码";
+	cout << "Compiling standard code";
 	sleep (x);
 	system ("g++.exe std.cpp -o std.exe");
 	system ("cls");
 	/*-----------------------------------*/
-	cout << "正在编译错误代码";
+	cout << "Compiling error code";
 	sleep (x);
 	system ("g++.exe UnAC.cpp -o UnAC.exe");
 	system ("cls");
 	/*-----------------------------------*/
-	cout << "正在编译数据生成器";
+	cout << "Compiling data generator";
 	sleep (x);
 	system ("g++.exe gen.cpp -o gen.exe");
 	system ("cls");
 	/*-----------------------------------*/
 	system ("cls");
 	while (1) {
-		cout << "正在生成输入文件";
+		cout << "Generating input file";
 		sleep (x);
 		system("gen.exe >Data.in");
 		system("cls");
-		cout << "正在生成正确答案";
+		cout << "Generating correct answers";
 		sleep (x);
 		system("std.exe <Data.in >ans.ans");
 		system("cls");
-		cout << "正在生成错误答案";
+		cout << "Generating wrong answers";
 		sleep (x);
 		system("UnAC.exe <Data.in >ans.out");
 		system("cls");
-		if(system("fc ans.out ans.ans")) {
-			cout << "发现错误，请查看";
+		if (system("fc ans.out ans.ans")) {
+			cout << "An error was found, please check";
 			sleep(x);
 			system("pause");
 		}
 	}
 }
 int main() {
-	cout << "请输入你要使用的方案\n";
-	cout << "1. 慢速模式、质量好\n";
-	cout << "2. 快速模式、质量差\n";
-	cout << "3. 自定义模式\n";
+	cout << "Please enter the scheme you want to use\n";
+	cout << "1. Slow mode, good quality\n";
+	cout << "2. Fast mode, poor quality\n";
+	cout << "3. Custom mode\n";
 	cin >> n;
 	if (n == 1) {
 		user(100);
 	} else if (n == 2) {
 		user(10);
 	} else {
-		cout << "输入的数为 x,那么使用时间为 3x × 测试点数，x 越大质量越好。\n请输入x:";
+		cout << "If the input number is x, then the usage time is 3x × test points, and the larger the x, the better the quality. \nPlease enter x:";
 		int x;
 		cin >> x;
 		user (x);
