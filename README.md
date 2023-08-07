@@ -5,7 +5,7 @@
 ![](http://img.shields.io/badge/zjx--kimi-give%20me%20a%20star-blue?logo=github)
 |[中文简体](https://github.com/zjx-kimi/Found-program-error/tree/zh-cn-1.0)|[English](https://github.com/zjx-kimi/Found-program-error/tree/en-1.0)|
 |:-:|:-:|
-- 这个仓库保存的代码是用来对拍程序的。
-- 这是一个终端应用。
-- 按照程序中提示做即可。
-- 作者编写不易，请给一个 Star ⭐ 再走吧...
+- This repository holds the code that is used for the counterpart program.
+- This is a terminal application.
+- Just follow the instructions in the program.
+- It's not easy for the author to write, please give a Star ⭐ before you go...
