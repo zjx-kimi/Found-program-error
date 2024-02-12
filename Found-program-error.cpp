@@ -70,7 +70,7 @@ int main() {
 	} else if (n == 2) {
 		user(10);
 	} else {
-		cout << "输入的数为 x,那么使用时间为 3x × 测试点数，x 越大质量越好。\n请输入x:";
+		cout << "请输入x:";
 		int x;
 		cin >> x;
 		user (x);
