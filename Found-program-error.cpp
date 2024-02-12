@@ -70,7 +70,7 @@ int main() {
 	} else if (n == 2) {
 		user(10);
 	} else {
-		cout << "If the input number is x, then the usage time is 3x × test points, and the larger the x, the better the quality. \nPlease enter x:";
+		cout << "Please enter x:";
 		int x;
 		cin >> x;
 		user (x);
